@@ -11,6 +11,7 @@ body {
 }
 
 .global-header {
+  
   height: 80px;
   display: flex;
   align-items: center;
@@ -979,6 +980,14 @@ input:checked {
   transition: var(--transition);
 }
 
+.our-team-container-tablet {
+  display: none;
+}
+
+.cards-logo-tablet {
+  display: none;
+}
+
 /*desktop*/
 @media screen and (min-width: 1158px) {
   .menu-button {
@@ -997,6 +1006,7 @@ input:checked {
 /*tablet*/
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .global-header {
+    padding: 0 15px;
     max-width: 1157px;
     display: flex;
     justify-content: space-between;
@@ -1063,7 +1073,8 @@ input:checked {
     margin: auto;
     padding: 0 15px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: calc( 5% + 10px );
   }
 
   .what-we-do {
@@ -1073,6 +1084,8 @@ input:checked {
   .wwd-container-two-ul ul {
     padding: 0;
     margin: 0;
+    display: grid;
+    gap: 30px;
   }
 
   .wwd-container-two-ul li div {
@@ -1080,9 +1093,77 @@ input:checked {
   }
 
   .wwd-container-two-ul li {
+    height: 251px;
     width: 354px;
   }
+
+  .wwd-photo {
+    display: none;
+  }
+  .our-team-container {
+    display: none;
+  }
+
+  .our-team {
+    padding: 60px 0;
+  }
+
+  .our-team-container-tablet {
+    margin: 0;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    gap: calc( 5% + 3px );
+  }
+
+.card-team {
+  width: 354px;
+  margin-top: 30px;
 }
+
+.icons-social-media-container {
+  margin: 16px  auto 24px;
+  }
+  
+  .cards-logo {
+    display: none;
+  }
+
+  .regular-custumers {
+    padding: 60px 15px;
+  }
+
+  .cards-logo-tablet {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+  }
+
+  .rc-logo {
+    width: 226px;
+  }
+
+  .regular-custumers-container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+
+  .regular-custumers-container h2 {
+    margin: 0;
+    row-gap: 30px;
+  }
+
+  
+
+  
+}
+  
+
 
 /*mobile*/
 @media screen and (max-width: 767px) {
@@ -1271,4 +1352,25 @@ input:checked {
   .wwd-container-two-ul {
     display: none;
   }
+
+  .wwd-photo {
+    display: none;
+  }
+
+  .our-team-container-tablet  {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-team {
+    width: 450px;
+  }
+
+  .our-team-container {
+    display: none
+  }
+
+  
 }
