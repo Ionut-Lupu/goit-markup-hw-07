@@ -989,6 +989,7 @@ input:checked {
 
 /*tablet*/
 @media screen and (max-width: 1157px) {
+
   html,
   body {
     width: 100%;
@@ -996,6 +997,19 @@ input:checked {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+  }
+
+  h1 {
+    width: 360px;
+    font-size: 26px;
+    line-height: 42px;
+    letter-spacing: 1.56px;
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 60px;
+    letter-spacing: 0.84px;
   }
 
   .global-header {
@@ -1071,13 +1085,6 @@ input:checked {
 
   .title-main-ct {
     height: 400px;
-  }
-
-  h1 {
-    width: 360px;
-    font-size: 26px;
-    line-height: 42px;
-    letter-spacing: 1.56px;
   }
 
   .menu-button {
@@ -1224,6 +1231,10 @@ input:checked {
 
   .subscribe-btn {
     margin: 0;
+  }
+
+  .cards-logo-mobile {
+    display: none;
   }
 }
 
@@ -1473,7 +1484,52 @@ input:checked {
     display: flex;
   }
 
-  .text-subscribe:nth-child(1) {
-    flex-shrink: 10;
+  .cards-logo {
+    display: none;
   }
+
+  .cards-logo-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .cards-logo-mobile-ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    row-gap: 30px;
+  }
+
+  .cards-logo-mobile-ul li {
+    gap: 30px;
+  }
+}
+
+/*mobile-max-480px*/
+@media screen and (max-width: 480px) {
+  .email-field,
+  .what-we-do-container,
+  .icons,
+  .card-team,
+  .cards-logo {
+    width: 90vw;
+  }
+
+  .cards-logo-mobile li {
+    width: 40vw;
+  }
+
+  .logo-custumers,
+  .logo-custumers svg {
+    width: 100%;
+  }
+
+  .cards-logo,
+  .cards-logo-tablet {
+    display: none;
+  }
+  
 }
