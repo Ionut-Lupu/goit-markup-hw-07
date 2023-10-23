@@ -1003,6 +1003,11 @@ input:checked {
     overflow-x: hidden;
   }
 
+  .global-header {
+    width: 740px;
+    margin: auto;
+  }
+
   h1 {
     width: 360px;
     font-size: 26px;
@@ -1262,6 +1267,7 @@ input:checked {
 
   .global-header {
     height: 60px;
+    width: calc(100% - 5%);
   }
 
   .web,
@@ -1523,7 +1529,6 @@ input:checked {
     flex-wrap: wrap;
   }
 
-  
 }
 
 /*mobile-max-480px*/
@@ -1549,6 +1554,4 @@ input:checked {
   .cards-logo-tablet {
     display: none;
   }
-
-
 }
