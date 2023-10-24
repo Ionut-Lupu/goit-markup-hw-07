@@ -1369,8 +1369,21 @@ input:checked {
     padding: 0;
   }
 
+  .current {
+    border: none;
+  }
+
+  .hover-icon .icons-nav-envelope {
+    width: 24px;
+    height: 20.003px;
+  }
+
+  .hover-icon .icons-nav-smartphone {
+    width: 20px;
+    height: 24px;
+  }
+
   .info-phone {
-    color: #2196f3;
     font-size: 34px;
     font-style: normal;
     font-weight: 500;
@@ -1407,6 +1420,7 @@ input:checked {
     font-weight: 500;
     line-height: 22px; /* 122.222% */
     letter-spacing: 0.36px;
+    text-decoration: none;
   }
 
   .social-media-links-js-menu svg {
@@ -1543,4 +1557,5 @@ input:checked {
   .cards-logo-tablet {
     display: none;
   }
+
 }
