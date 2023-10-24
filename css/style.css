@@ -1089,12 +1089,12 @@ input:checked {
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .title-main {
-      linear-gradient(
+      background-image: linear-gradient(
         to bottom,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      background-image: url(../images/title-main-bg-2x-smal-devices.png);
+      url(../images/title-main-bg-2x-smal-devices.png);
     }
   }
 
@@ -1423,7 +1423,6 @@ input:checked {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: auto;
     margin: 60px auto;
     gap: 30px;
   }
@@ -1468,18 +1467,8 @@ input:checked {
     display: none;
   }
 
-  .cards-logo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    padding: 0 20;
-  }
-
   .rc-logo {
     width: 210px;
-    flex-grow: 30%;
     flex-shrink: 0;
   }
 
